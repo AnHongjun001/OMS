@@ -1,0 +1,57 @@
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                在此修改站点全局信息
+            </div>
+            <div class="panel-body">
+            <div class="row">
+                <div class="col-lg-6">
+                    <form role="form">
+                        <div class="form-group">
+                            <label>站点标题</label>
+                            <input class="form-control" id="sys_title" oninput="change_copyright()"><br>
+                            <label>站点logo</label>
+                            <input class="form-control" id="sys_logo"><br>
+                            <label>站点创立日期</label>
+                            <input class="form-control" id="sys_setup_date" oninput="change_copyright()"><br>
+                            <label>token密钥</label>
+                            <input class="form-control" id="sys_token_key"><br>
+                            <label>登录有效时间</label>
+                            <input class="form-control" id="sys_effect_time"><br>
+                            <label>htm文件地址</label>
+                            <input class="form-control" id="sys_htm_path"><br>
+                            <label>js文件地址</label>
+                            <input class="form-control" id="sys_js_path"><br>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <form role="form">
+                        <div class="form-group">
+                            <label>企业名称</label>
+                            <input class="form-control" id="sys_firm_name" oninput="change_copyright()"><br>
+                            <label>前端服务器地址</label>
+                            <input class="form-control" id="sys_view_server"><br>
+                            <label>后端服务器地址</label>
+                            <input class="form-control" id="sys_api_server"><br>
+                            <label>版权声明格式</label>
+                            <textarea class="form-control" rows="3" id="sys_copyright_format" oninput="change_copyright()"></textarea>
+                            <label>版权声明预览</label>
+                            <textarea class="form-control" rows="2" id="view_copyright_format" disabled=""></textarea>
+                            <span>
+                                提示：<br>
+                                $title$：站点标题，$firm_name$：企业名称，<br>
+                                $setup_date$：站点创立日期，$current_date$：当前日期<br>
+                            </span><br>
+                            <a class="btn btn-primary" onclick="view_page()">预览</a>
+                            <a class="btn btn-primary" onclick="reload_page()">重置</a>
+                            <a class="btn btn-primary" onclick="submit_baseinfo()" id="sub">提交修改</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                                
