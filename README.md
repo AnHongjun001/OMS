@@ -15,6 +15,6 @@ Thinker group, Dalian Maritime University, reserves all rights of this project.
 If you have any question, contact us by ahj@anhongjun.top.
 
 ## Framework
-We follow the idea of separation of front-end and back-end to develop this project.
+We follow the idea separation of front-end and back-end to develop this project.
 
 The Back-end program is in folder *API*. They should be deployed on a PHP server. And the Front-end is in folder *web*. They're written in html+css+js and should be deployed on a static web server.
