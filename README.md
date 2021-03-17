@@ -9,6 +9,7 @@ This project is developed by Thinker group, used for joining the competition nam
 ## Developer
 * Hongjun An
 * Jintao Song
+
 Thinker group, Dalian Maritime University, reserves all rights of this project.
 
 If you have any question, contact us by ahj@anhongjun.top.
