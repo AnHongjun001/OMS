@@ -1,8 +1,1 @@
-{
-    "url":"localhost",
-    "user":"sql_api_thinker2",
-    "pswd":"bCifzMcJ4N6CBMTD",
-    "name":"sql_api_thinker2",
-    "port":"3306",
-    "pre":"thinker_"
-}
+{"user":"sql_api_thinker2","pswd":"bCifzMcJ4N6CBMTD","url":"localhost","port":"3306","name":"sql_api_thinker2","pre":"thinker_"}

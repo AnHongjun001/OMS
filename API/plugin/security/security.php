@@ -23,7 +23,7 @@
         $_response->print_json();
         exit(0);
     }
-    $user_entry = number_format($result[0]['api_entry']);
+    $user_entry = $result[0]['api_entry'];
     
     //检查API是否合法
     $api_name = $_request->method;
@@ -33,10 +33,15 @@
         $_response->print_json();
         exit(0);
     }
-    $api_entry = number_format($result[0]['api_entry']);
+    $api_entry = $result[0]['api_entry'];
+    
+    $_log->append($user_entry);
+    $_log->append($api_entry);
+    $_log->append(intval($user_entry) & intval($api_entry));
+    $_log->append(2047 & 1);
     
     //验证API权限
-    if($api_entry == 0 || ($user_entry & $api_entry) != $api_entry){
+    if(intval($api_entry) == 0 || (intval($user_entry) & intval($api_entry)) != $api_entry){
         $_response->error(2, 'API请求错误：对不起，您的权限不够。');
         $_response->print_json();
         exit(0);

@@ -8,6 +8,9 @@
     $_database = new Database();
     $_baseinfo = new BaseInfo($_database);
     
+    print md5('123456');
+    
+    /*
     $_baseinfo->usertype = 'admin';
     $_database->type = 'admin' . '_';
     $emm = 0;
@@ -26,4 +29,5 @@
         $entry |= pow(2, $i);
     }
     print $entry;
+    */
 ?>

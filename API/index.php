@@ -6,6 +6,7 @@
     include './class/Request/Request.php';
     include './class/Response/Response.php';
     include './class/BaseInfo/BaseInfo.php';
+    include './class/Log/Log.php';
     
     if(!isset($_POST['data'])) die('{"code":"2", "info":"非法访问！"}');
     
@@ -13,6 +14,7 @@
     $_request = new Request($_POST['data']);
     $_response = new Response();
     $_baseinfo = new BaseInfo($_database);
+    $_log = new Log();
     
     $_baseinfo->usertype = $_request->usertype;
     $_database->type = $_request->usertype . '_';

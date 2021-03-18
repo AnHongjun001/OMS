@@ -32,4 +32,13 @@ We made an agreement used for interaction between front-end and back-end.
 
 ### Request
 
-Front-end send an POST request to ask for some information. 
+Front-end send an POST request to ask for some information. The POST should include a parameter obey the format:
+
+```json
+data={
+	"_username":"",
+	"_token":"",
+	"_usertype":"",
+	"_request":""
+}
+```
