@@ -94,6 +94,7 @@ function set_api(id){
 function clear_reg(){
     $('#new_api_name').val('');
     $('#new_api_info').val('');
+    $('#new_api_entry').val('');
 }
 
 function reg_new_api_success(obj){
@@ -113,6 +114,7 @@ function reg_new_api_error(obj){
 function reg_new_api(){
     var api_name = $('#new_api_name').val();
     var api_info = $('#new_api_info').val();
+    var api_entry = $('#new_api_entry').val();
     if(api_name==''){
         alert('API名称不能为空！');
         $('#new_api_name').focus();
@@ -123,10 +125,16 @@ function reg_new_api(){
         $('#new_api_info').focus();
         return;
     }
+    if(api_info==''){
+        alert('API权限不能为空！');
+        $('#new_api_entry').focus();
+        return;
+    }
     $('#reg_api').html('等待...');
     $('#reg_api').attr('disabled', true);
     var post_data = '{"_username":"' + getCookie('username') + '", "_token":"' + getCookie('token') + '", "_usertype":"' + getCookie('usertype') + '", "_request":"reg'+ window.usertype +'Api"';
     post_data += ',"api_name":"' + api_name + '"';
+    post_data += ',"api_entry":"' + api_entry + '"';
     post_data += ',"api_info":"' + api_info + '"}';
     ajax(api_server, post_data, reg_new_api_success, true, reg_new_api_error);
 }

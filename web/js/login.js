@@ -21,6 +21,7 @@ function login(){
         document.getElementById("userpwd").focus();
         return;
     }
+    password = md5(password);
     var post_data = '{"_username":"' + username + '", "_token":"' + password + '", "_usertype":"' + $_GET['type'] + '", "_request":"login"}';
     ajax(api_server, post_data, success_login, true, '');
 }
