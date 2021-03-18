@@ -17,19 +17,19 @@ If you have any question, contact us by ahj@anhongjun.top.
 ## Framework
 We followed the idea *separation of front-end and back-end* to develop this project.
 
-* Back-end
+### Back-end
 
 All codes of Back-end are in folder *API*. Most of them are PHP files, so that you should deploy them on a PHP server, which version should upper than 7.3. 
 
 We created a framework named ThinkerAPI to develop the Back-end. To learn more information, you can read the file API/Readme.md.
 
-* Front-end
+### Front-end
 
-In folder *web*. We developed by html+css+js, so that you should deploy them on a static web server. For more information, read web/Readme.md.
+In folder *web*. We developed them in html+css+js, so that you should deploy them on a static web server. For more information, read web/Readme.md.
 
 ## Interaction
 We made an agreement used for interaction between front-end and back-end.
 
-* Request
+### Request
 
 Front-end send an POST request to ask for some information. 
