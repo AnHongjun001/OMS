@@ -1,14 +1,21 @@
 # OMS
 小微企业跨组织人才管理系统
-***
+
+[TOC]
+
 ## Introduction
 OMS:Organization Management System.
 
 This project is developed by Thinker group, used for joining the competition named *China Students Service Outsourcing Innovation and Entrepreneurship Competition, 2021*. It aimed to create a Management System to provide Convenient Service between HR and Staff.
 
 ## Developer
-* Hongjun An
+
+* Jianhao Sun
 * Jintao Song
+* Hongjun An
+* Ninging Liu
+
+*sorted by Alphabet*.
 
 Thinker group, Dalian Maritime University, reserves all rights of this project.
 
