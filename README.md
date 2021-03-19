@@ -21,18 +21,19 @@ Thinker group, Dalian Maritime University, reserves all rights of this project.
 If you have any question, contact us by ahj@anhongjun.top.
 
 ## Framework
-We developed this project following the idea *separation of front and back end*, using JSON string to interact between them. The following is their respective introduction.
+
+We developed the project according to the ideas of *front-end and back-end separately*, and used JSON string to interact between them. The following is their respective introduction.
 
 #### Front-end
 
-You can find all codes of Front-end in folder *web*. We developed them in html+css+js, so that you should deploy them on a static web server. For more information, read web/Readme.md.
+You can find all codes of Front-end in folder *web*. We developed them using html+css+js, so that you should deploy them on a static web server. For more information, please read web/README.md.
 
 #### Back-end
 
-All files of back-end are located in the folder *API*. Most of them are PHP files, so that you should deploy them on a PHP server, which version should upper than 7.3. We try to use simple inside-function so theoretically it could run on most PHP server with great compatibility.
+All files of back-end are in the folder *API*. Most of them are PHP files, so that you should deploy them on a PHP server, and the version should be higher than 7.3. We try to use simple internal functions, so theoretically it can run with excellent compatibility on most PHP server.
 
-We created a framework named ThinkerAPI to develop the Back-end. To learn more information, you can read the file API/Readme.md.
+We created a framework named ThinkerAPI to develop the Back-end. To learn more, you can read the file API/Readme.md.
 
 ## Interaction
 
-To learn the method of interaction between front-end and back-end, read API/README.md and web/README.md.
+To understand the interaction method between front-end and back-end, please read API/README.md and web/README.md.
