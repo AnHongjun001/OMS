@@ -3,7 +3,7 @@
 
 
 ## Introduction
-OMS:Organization Management System.
+***OMS:Organization Management System.***
 
 This project is developed by Thinker group, used for joining the competition named *China Students Service Outsourcing Innovation and Entrepreneurship Competition, 2021*. It aimed to create a Management System to provide Convenient Service between HR and Staff.
 
